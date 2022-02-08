@@ -34,3 +34,13 @@ C:\Users\kdh23\Source\Repos\Mission6Group\Mission6Group\bin\Debug\netcoreapp3.1\
 C:\Users\kdh23\Source\Repos\Mission6Group\Mission6Group\obj\Debug\netcoreapp3.1\Mission6Group.Views.pdb
 C:\Users\kdh23\Source\Repos\Mission6Group\Mission6Group\obj\Debug\netcoreapp3.1\Mission6Group.genruntimeconfig.cache
 C:\Users\kdh23\Source\Repos\Mission6Group\Mission6Group\obj\Debug\netcoreapp3.1\Mission6Group.csproj.CopyComplete
+C:\Users\annad\OneDrive\Documents\GitHub\Mission6Group\Mission6Group\obj\Debug\netcoreapp3.1\Mission6Group.csproj.AssemblyReference.cache
+C:\Users\annad\OneDrive\Documents\GitHub\Mission6Group\Mission6Group\obj\Debug\netcoreapp3.1\Mission6Group.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\annad\OneDrive\Documents\GitHub\Mission6Group\Mission6Group\obj\Debug\netcoreapp3.1\Mission6Group.AssemblyInfoInputs.cache
+C:\Users\annad\OneDrive\Documents\GitHub\Mission6Group\Mission6Group\obj\Debug\netcoreapp3.1\Mission6Group.AssemblyInfo.cs
+C:\Users\annad\OneDrive\Documents\GitHub\Mission6Group\Mission6Group\obj\Debug\netcoreapp3.1\Mission6Group.csproj.CoreCompileInputs.cache
+C:\Users\annad\OneDrive\Documents\GitHub\Mission6Group\Mission6Group\obj\Debug\netcoreapp3.1\Mission6Group.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\annad\OneDrive\Documents\GitHub\Mission6Group\Mission6Group\obj\Debug\netcoreapp3.1\Mission6Group.RazorAssemblyInfo.cache
+C:\Users\annad\OneDrive\Documents\GitHub\Mission6Group\Mission6Group\obj\Debug\netcoreapp3.1\Mission6Group.RazorAssemblyInfo.cs
+C:\Users\annad\OneDrive\Documents\GitHub\Mission6Group\Mission6Group\obj\Debug\netcoreapp3.1\Mission6Group.dll
+C:\Users\annad\OneDrive\Documents\GitHub\Mission6Group\Mission6Group\obj\Debug\netcoreapp3.1\Mission6Group.pdb
