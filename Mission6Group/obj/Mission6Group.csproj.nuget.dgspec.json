@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\annad\\OneDrive\\Documents\\GitHub\\Mission6Group\\Mission6Group\\Mission6Group.csproj": {}
+    "C:\\Users\\kdh23\\Source\\Repos\\Mission6Group\\Mission6Group\\Mission6Group.csproj": {}
   },
   "projects": {
-    "C:\\Users\\annad\\OneDrive\\Documents\\GitHub\\Mission6Group\\Mission6Group\\Mission6Group.csproj": {
+    "C:\\Users\\kdh23\\Source\\Repos\\Mission6Group\\Mission6Group\\Mission6Group.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\annad\\OneDrive\\Documents\\GitHub\\Mission6Group\\Mission6Group\\Mission6Group.csproj",
+        "projectUniqueName": "C:\\Users\\kdh23\\Source\\Repos\\Mission6Group\\Mission6Group\\Mission6Group.csproj",
         "projectName": "Mission6Group",
-        "projectPath": "C:\\Users\\annad\\OneDrive\\Documents\\GitHub\\Mission6Group\\Mission6Group\\Mission6Group.csproj",
-        "packagesPath": "C:\\Users\\annad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\annad\\OneDrive\\Documents\\GitHub\\Mission6Group\\Mission6Group\\obj\\",
+        "projectPath": "C:\\Users\\kdh23\\Source\\Repos\\Mission6Group\\Mission6Group\\Mission6Group.csproj",
+        "packagesPath": "C:\\Users\\kdh23\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kdh23\\Source\\Repos\\Mission6Group\\Mission6Group\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\annad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kdh23\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -79,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }
