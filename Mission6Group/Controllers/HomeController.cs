@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Mission6Group.Models;
+//using Mission6Group.Models;
 
 namespace Mission6Group.Controllers
 {
@@ -22,6 +22,19 @@ namespace Mission6Group.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public IActionResult Task()
+        {
+            return View();
+        }
+
+        //[HttpPost]
+        //public IActionResult Task()
+        //{
+        //    return View("Index");
+        //}
+
 
     }
 }
