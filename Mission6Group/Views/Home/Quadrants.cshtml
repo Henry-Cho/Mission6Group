@@ -1,0 +1,101 @@
+﻿@{
+    ViewData["Title"] = "Quadrants";
+}
+
+@model Mission6Group.Models.Task
+
+<div class="container">
+
+    <div class="row">Stephen Covey's Time Management Matrix</div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-5">Urgent</div>
+        <div class="col-5">Not Urgent</div>
+    </div>
+    <div class="row">
+        <div class="col-2">Important</div>
+        <div class="col-5">
+            <p>Quadrant 1</p>
+            <div>
+                @foreach (var x in Model)
+                {
+                    if (x.Quadrant == 1)
+                    {
+                        <div>
+                            <div>@x.TaskDescription</div>
+                            <div>
+                                <a asp-controller="Home" asp-action="Edit" asp-route-recordId="@x.TaskId">Edit</a>
+                                <br />
+                                <a asp-controller="Home" asp-action="Delete" asp-route-recordId="@x.TaskId">Delete</a>
+                            </div>
+                            <div><a class="btn btn-primary" asp-controller="Home" asp-action="MarkComplete" asp-route-recordId="@x.TaskId">Complete</a></div>
+                        </div>
+                     }
+                 }
+            </div>
+        </div>
+        <div class="col-5">
+            <p>Quadrant 2</p>
+            <div>
+                @foreach (var x in Model)
+                {
+                    if (x.Quadrant == 2)
+                    {
+                        <div>
+                            <div>@x.TaskDescription</div>
+                            <div>
+                                <a asp-controller="Home" asp-action="Edit" asp-route-recordId="@x.TaskId">Edit</a>
+                                <br />
+                                <a asp-controller="Home" asp-action="Delete" asp-route-recordId="@x.TaskId">Delete</a>
+                            </div>
+                            <div><a class="btn btn-primary" asp-controller="Home" asp-action="MarkComplete" asp-route-recordId="@x.TaskId">Complete</a></div>
+                        </div>
+                     }
+                 }
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">Not Important</div>
+        <div class="col-5">
+            <p>Quadrant 3</p>
+            <div>
+                @foreach (var x in Model)
+                {
+                    if (x.Quadrant == 3)
+                    {
+                        <div>
+                            <div>@x.TaskDescription</div>
+                            <div>
+                                <a asp-controller="Home" asp-action="Edit" asp-route-recordId="@x.TaskId">Edit</a>
+                                <br />
+                                <a asp-controller="Home" asp-action="Delete" asp-route-recordId="@x.TaskId">Delete</a>
+                            </div>
+                            <div><a class="btn btn-primary" asp-controller="Home" asp-action="MarkComplete" asp-route-recordId="@x.TaskId">Complete</a></div>
+                        </div>
+                     }
+                 }
+            </div>
+        </div>
+        <div class="col-5">
+            <p>Quadrant 4</p>
+            <div>
+                @foreach (var x in Model)
+                    {
+                        if (x.Quadrant == 4)
+                        {
+                            <div>
+                                <div>@x.TaskDescription</div>
+                                <div>
+                                    <a asp-controller="Home" asp-action="Edit" asp-route-recordId="@x.TaskId">Edit</a>
+                                    <br />
+                                    <a asp-controller="Home" asp-action="Delete" asp-route-recordId="@x.TaskId">Delete</a>
+                                </div>
+                                <div><a class="btn btn-primary" asp-controller="Home" asp-action="MarkComplete" asp-route-recordId="@x.TaskId">Complete</a></div>
+                            </div>
+                         }
+                     }
+            </div>
+        </div>
+    </div>
+</div>
