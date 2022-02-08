@@ -77,3 +77,15 @@ label {
     width:150px;
     display:inline-block;
 }
+
+.container {
+    border: solid 2px black !important;
+}
+
+.row {
+    border: solid 2px black !important;
+}
+
+.col-5 {
+    border-left: solid 4px black !important;
+}
