@@ -11,7 +11,7 @@ using Mission6Group.Models;
 
 namespace Mission6Group.Controllers
 {
-         public class HomeController : Controller
+    public class HomeController : Controller
     {
         private TaskContext task { get; set; }
 

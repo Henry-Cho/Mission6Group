@@ -1,6 +1,4 @@
-﻿@{
-    ViewData["Title"] = "Quadrants";
-}
+﻿@{ ViewData["Title"] = "Quadrants"; }
 
 @model List<Mission6Group.Models.TaskResponse>
 
@@ -21,17 +19,16 @@
                 {
                     if (x.Quadrant == 1)
                     {
-                        <div>
-                            <div>@x.TaskDescription</div>
-                            <div>
-                                <a asp-controller="Home" asp-action="Edit" asp-route-recordId="@x.TaskId">Edit</a>
-                                <br />
-                                <a asp-controller="Home" asp-action="Delete" asp-route-recordId="@x.TaskId">Delete</a>
-                            </div>
-                            <div><a class="btn btn-primary" asp-controller="Home" asp-action="MarkComplete" asp-route-recordId="@x.TaskId">Complete</a></div>
-                        </div>
-                     }
-                 }
+    <div>
+        <div>@x.TaskDescription</div>
+        <div>
+            <a asp-controller="Home" asp-action="Edit" asp-route-recordId="@x.TaskId">Edit</a>
+            <br />
+            <a asp-controller="Home" asp-action="Delete" asp-route-recordId="@x.TaskId">Delete</a>
+        </div>
+        <div><a class="btn btn-primary" asp-controller="Home" asp-action="MarkComplete" asp-route-recordId="@x.TaskId">Complete</a></div>
+    </div>}
+                }
             </div>
         </div>
         <div class="col-5">
@@ -41,17 +38,16 @@
                 {
                     if (x.Quadrant == 2)
                     {
-                        <div>
-                            <div>@x.TaskDescription</div>
-                            <div>
-                                <a asp-controller="Home" asp-action="Edit" asp-route-recordId="@x.TaskId">Edit</a>
-                                <br />
-                                <a asp-controller="Home" asp-action="Delete" asp-route-recordId="@x.TaskId">Delete</a>
-                            </div>
-                            <div><a class="btn btn-primary" asp-controller="Home" asp-action="MarkComplete" asp-route-recordId="@x.TaskId">Complete</a></div>
-                        </div>
-                     }
-                 }
+    <div>
+        <div>@x.TaskDescription</div>
+        <div>
+            <a asp-controller="Home" asp-action="Edit" asp-route-recordId="@x.TaskId">Edit</a>
+            <br />
+            <a asp-controller="Home" asp-action="Delete" asp-route-recordId="@x.TaskId">Delete</a>
+        </div>
+        <div><a class="btn btn-primary" asp-controller="Home" asp-action="MarkComplete" asp-route-recordId="@x.TaskId">Complete</a></div>
+    </div>}
+                }
             </div>
         </div>
     </div>
@@ -64,37 +60,35 @@
                 {
                     if (x.Quadrant == 3)
                     {
-                        <div>
-                            <div>@x.TaskDescription</div>
-                            <div>
-                                <a asp-controller="Home" asp-action="Edit" asp-route-recordId="@x.TaskId">Edit</a>
-                                <br />
-                                <a asp-controller="Home" asp-action="Delete" asp-route-recordId="@x.TaskId">Delete</a>
-                            </div>
-                            <div><a class="btn btn-primary" asp-controller="Home" asp-action="MarkComplete" asp-route-recordId="@x.TaskId">Complete</a></div>
-                        </div>
-                     }
-                 }
+    <div>
+        <div>@x.TaskDescription</div>
+        <div>
+            <a asp-controller="Home" asp-action="Edit" asp-route-recordId="@x.TaskId">Edit</a>
+            <br />
+            <a asp-controller="Home" asp-action="Delete" asp-route-recordId="@x.TaskId">Delete</a>
+        </div>
+        <div><a class="btn btn-primary" asp-controller="Home" asp-action="MarkComplete" asp-route-recordId="@x.TaskId">Complete</a></div>
+    </div>}
+                }
             </div>
         </div>
         <div class="col-5">
             <p>Quadrant 4</p>
             <div>
                 @foreach (var x in Model)
+                {
+                    if (x.Quadrant == 4)
                     {
-                        if (x.Quadrant == 4)
-                        {
-                            <div>
-                                <div>@x.TaskDescription</div>
-                                <div>
-                                    <a asp-controller="Home" asp-action="Edit" asp-route-recordId="@x.TaskId">Edit</a>
-                                    <br />
-                                    <a asp-controller="Home" asp-action="Delete" asp-route-recordId="@x.TaskId">Delete</a>
-                                </div>
-                                <div><a class="btn btn-primary" asp-controller="Home" asp-action="MarkComplete" asp-route-recordId="@x.TaskId">Complete</a></div>
-                            </div>
-                         }
-                     }
+    <div>
+        <div>@x.TaskDescription</div>
+        <div>
+            <a asp-controller="Home" asp-action="Edit" asp-route-recordId="@x.TaskId">Edit</a>
+            <br />
+            <a asp-controller="Home" asp-action="Delete" asp-route-recordId="@x.TaskId">Delete</a>
+        </div>
+        <div><a class="btn btn-primary" asp-controller="Home" asp-action="MarkComplete" asp-route-recordId="@x.TaskId">Complete</a></div>
+    </div>}
+                }
             </div>
         </div>
     </div>

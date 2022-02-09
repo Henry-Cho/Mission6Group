@@ -25,6 +25,6 @@ namespace Mission6Group.Models
                 );
         }
 
-        
+
     }
 }

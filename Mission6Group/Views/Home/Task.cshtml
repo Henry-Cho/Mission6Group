@@ -1,8 +1,6 @@
-@{
-    ViewData["Title"] = "Add/Edit Task";
-}
+@{ ViewData["Title"] = "Add/Edit Task"; }
 
-@model Mission6Group.Models.TaskResponse; 
+@model Mission6Group.Models.TaskResponse
 
 <div class="text-center">
     <h1 class="display-4">Fill out your Add/Edit Task form</h1>
@@ -27,19 +25,15 @@
         <input asp-for="Quadrant" /><br />
 
         <label id="category" asp-for="Category">Category :</label>
-        <select asp-for="CategoryId">
-            <option value="">Select a Category</option>
-            <option value="1">Home</option>
-            <option value="2">School</option>
-            <option value="3">Work</option>
-            <option value="4">Church</option>
-            @*@foreach (Category i in ViewBag.Categories)
-            {   
-                For some reasons, my visual studio does not recognize that Category class after @foreach...
-                I guess because I hard coded above, this results when I try to edit, it does not edit the database but it just creates another data.
-                If we can get that "Category" work, we should be fine.
-                <option value="@i.CategoryId">@i.CategoryName</option>
-            }*@
+        <select asp-for="Categoryid">
+            @*<option value="">Select a Category</option>
+                <option value="1">Home</option>
+                <option value="2">School</option>
+                <option value="3">Work</option>
+                <option value="4">Church</option>*@
+            @foreach (var m in ViewBag.Categories)
+            {
+<option value="@m.CategoryId">@m.CategoryName</option>            }
         </select><br />
 
         <label id="completed" asp-for="Completed">Completed :</label>
@@ -47,7 +41,9 @@
             <option value="true">True</option>
             <option value="false">False</option>
         </select><br />
-
+        @if (ViewBag.New == false)
+        {
+<input type="hidden" asp-for="TaskId" />}
         <input id="submit" type="submit" value="Confirm Task" />
     </form>
 </div>
