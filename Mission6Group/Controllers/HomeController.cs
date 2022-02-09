@@ -4,7 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Mission6Group.Models;
 //using Mission6Group.Models;
 
 namespace Mission6Group.Controllers
@@ -94,7 +96,7 @@ namespace Mission6Group.Controllers
         {
             // find a record from DB by its id
             var record = task.Tasks.Single(x => x.TaskId == recordId);
-            task.Responses.Remove(record);
+            task.Tasks.Remove(record);
             task.SaveChanges();
 
             var taskList = task.Tasks

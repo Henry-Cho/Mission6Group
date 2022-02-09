@@ -1,10 +1,7 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Mission6Group\\Controllers",
-    "\\Mission6Group\\Views",
-    "\\Mission6Group\\Views\\Home",
-    "\\Mission6Group\\Views\\Shared"
+    "\\Mission6Group"
   ],
   "SelectedNode": "\\Mission6Group.sln",
   "PreviewInSolutionExplorer": false

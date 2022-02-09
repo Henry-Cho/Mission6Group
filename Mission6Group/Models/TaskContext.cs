@@ -12,7 +12,7 @@ namespace Mission6Group.Models
         {
 
         }
-        public DbSet<Task> Tasks { get; set; }
+        public DbSet<TaskResponse> Tasks { get; set; }
         public DbSet<Category> Categories { get; set; }
 
         protected override void OnModelCreating(ModelBuilder mb)

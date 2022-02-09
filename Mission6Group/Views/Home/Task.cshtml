@@ -2,49 +2,52 @@
     ViewData["Title"] = "Add/Edit Task";
 }
 
-@*@model Mission6Group.Models.ApplicationResponse*@
+@model Mission6Group.Models.TaskResponse; 
 
 <div class="text-center">
     <h1 class="display-4">Fill out your Add/Edit Task form</h1>
 
-</div><br /><br /><br />
+</div>
+<br />
+<br />
+<br />
 
 <div>
     <form method="post">
 
         <div asp-validation-summary="All"></div>
 
-        <label class="task" @*asp-for="Task"*@>Task: </label>
-        <input @*asp-for="Task"*@ /><br />
+        <label id="task" asp-for="TaskDescription">Task :</label>
+        <input asp-for="TaskDescription" /><br />
 
-        <label class="DueDate" @*asp-for="DueDate"*@>Due Date: </label>
-        <input @*asp-for="DueDate"*@ /><br />
+        <label id="dueDate" asp-for="DueDate">Due Date :</label>
+        <input asp-for="DueDate" /><br />
 
-        <label @*asp-for="Quadrant"*@>Quadrant (1 - 4): </label>
-        <input @*asp-for="Quadrant"*@ /><br />
+        <label id="quadrant" asp-for="Quadrant">Quadrant (1-4) :</label>
+        <input asp-for="Quadrant" /><br />
 
-        <label @*asp-for="Category"*@>Category: </label>
-        <select @*asp-for="Category"*@>
+        <label id="category" asp-for="Category">Category :</label>
+        <select asp-for="CategoryId">
             <option value="">Select a Category</option>
-            @*@foreach (Category c in ViewBag.Categories)
-            {
-                <option value="@m.CategoryId">@c.CategoryName</option>
+            <option value="1">Home</option>
+            <option value="2">School</option>
+            <option value="3">Work</option>
+            <option value="4">Church</option>
+            @*@foreach (Category i in ViewBag.Categories)
+            {   
+                For some reasons, my visual studio does not recognize that Category class after @foreach...
+                I guess because I hard coded above, this results when I try to edit, it does not edit the database but it just creates another data.
+                If we can get that "Category" work, we should be fine.
+                <option value="@i.CategoryId">@i.CategoryName</option>
             }*@
         </select><br />
 
-        <label @*asp-for="Completed"*@>Completed</label>
-        <select @*asp-for="Completed"*@>
+        <label id="completed" asp-for="Completed">Completed :</label>
+        <select asp-for="Completed">
             <option value="true">True</option>
             <option value="false">False</option>
         </select><br />
 
-        <button type="submit" asp-controller="Home" asp-action="Index"> Confirm Task</button>
-        <!-- This asp-controller and action should be removed after we created models and database -->
-
+        <input id="submit" type="submit" value="Confirm Task" />
     </form>
 </div>
-
-
-
-
-

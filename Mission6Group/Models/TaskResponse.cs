@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mission6Group.Models
 {
-    public class Task
+    public class TaskResponse
     {
         [Key]
         public int TaskId { get; set; }
