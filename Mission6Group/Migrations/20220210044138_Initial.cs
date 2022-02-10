@@ -29,15 +29,15 @@ namespace Mission6Group.Migrations
                     TaskDescription = table.Column<string>(nullable: false),
                     DueDate = table.Column<DateTime>(nullable: false),
                     Quadrant = table.Column<int>(nullable: false),
-                    CategoryId = table.Column<int>(nullable: false),
+                    Categoryid = table.Column<int>(nullable: false),
                     Completed = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Tasks", x => x.TaskId);
                     table.ForeignKey(
-                        name: "FK_Tasks_Categories_CategoryId",
-                        column: x => x.CategoryId,
+                        name: "FK_Tasks_Categories_Categoryid",
+                        column: x => x.Categoryid,
                         principalTable: "Categories",
                         principalColumn: "CategoryId",
                         onDelete: ReferentialAction.Cascade);
@@ -64,9 +64,9 @@ namespace Mission6Group.Migrations
                 values: new object[] { 4, "Church" });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Tasks_CategoryId",
+                name: "IX_Tasks_Categoryid",
                 table: "Tasks",
-                column: "CategoryId");
+                column: "Categoryid");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

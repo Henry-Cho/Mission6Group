@@ -52,13 +52,13 @@ namespace Mission6Group.Migrations
                         });
                 });
 
-            modelBuilder.Entity("Mission6Group.Models.Task", b =>
+            modelBuilder.Entity("Mission6Group.Models.TaskResponse", b =>
                 {
                     b.Property<int>("TaskId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("CategoryId")
+                    b.Property<int>("Categoryid")
                         .HasColumnType("INTEGER");
 
                     b.Property<bool>("Completed")
@@ -76,16 +76,16 @@ namespace Mission6Group.Migrations
 
                     b.HasKey("TaskId");
 
-                    b.HasIndex("CategoryId");
+                    b.HasIndex("Categoryid");
 
                     b.ToTable("Tasks");
                 });
 
-            modelBuilder.Entity("Mission6Group.Models.Task", b =>
+            modelBuilder.Entity("Mission6Group.Models.TaskResponse", b =>
                 {
                     b.HasOne("Mission6Group.Models.Category", "Category")
                         .WithMany()
-                        .HasForeignKey("CategoryId")
+                        .HasForeignKey("Categoryid")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

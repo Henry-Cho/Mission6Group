@@ -13,7 +13,7 @@ namespace Mission6Group.Models
         [Required]
         public string TaskDescription { get; set; }
         public DateTime DueDate { get; set; }
-        [Required]
+        [Range(1, 4)]
         public int Quadrant { get; set; }
         public int Categoryid { get; set; }
         public Category Category { get; set; }

@@ -33,17 +33,17 @@
                 <option value="4">Church</option>*@
             @foreach (var m in ViewBag.Categories)
             {
-<option value="@m.CategoryId">@m.CategoryName</option>            }
+            <option value="@m.CategoryId">@m.CategoryName</option>            }
         </select><br />
 
         <label id="completed" asp-for="Completed">Completed :</label>
         <select asp-for="Completed">
-            <option value="true">True</option>
             <option value="false">False</option>
+            <option value="true">True</option>
         </select><br />
         @if (ViewBag.New == false)
         {
-<input type="hidden" asp-for="TaskId" />}
+        <input type="hidden" asp-for="TaskId" />}
         <input id="submit" type="submit" value="Confirm Task" />
     </form>
 </div>
