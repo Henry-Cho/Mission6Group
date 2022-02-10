@@ -9,7 +9,7 @@ using Mission6Group.Models;
 namespace Mission6Group.Migrations
 {
     [DbContext(typeof(TaskContext))]
-    [Migration("20220208024257_Initial")]
+    [Migration("20220210044138_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -54,13 +54,13 @@ namespace Mission6Group.Migrations
                         });
                 });
 
-            modelBuilder.Entity("Mission6Group.Models.Task", b =>
+            modelBuilder.Entity("Mission6Group.Models.TaskResponse", b =>
                 {
                     b.Property<int>("TaskId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("CategoryId")
+                    b.Property<int>("Categoryid")
                         .HasColumnType("INTEGER");
 
                     b.Property<bool>("Completed")
@@ -78,16 +78,16 @@ namespace Mission6Group.Migrations
 
                     b.HasKey("TaskId");
 
-                    b.HasIndex("CategoryId");
+                    b.HasIndex("Categoryid");
 
                     b.ToTable("Tasks");
                 });
 
-            modelBuilder.Entity("Mission6Group.Models.Task", b =>
+            modelBuilder.Entity("Mission6Group.Models.TaskResponse", b =>
                 {
                     b.HasOne("Mission6Group.Models.Category", "Category")
                         .WithMany()
-                        .HasForeignKey("CategoryId")
+                        .HasForeignKey("Categoryid")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

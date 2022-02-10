@@ -87,7 +87,7 @@ namespace Mission6Group.Controllers
             }
             ViewBag.New = false;
             // if the model is not validated, get data from category model and show form cshtml
-            ViewBag.Categories = task.Tasks.ToList();
+            ViewBag.Categories = task.Categories.ToList();
             return View("Task", ar);
         }
 
